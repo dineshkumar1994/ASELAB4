@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="SignInApp">
+<head>
+    <style type="text/css">
+
+        body {font-family:Arial, Sans-Serif;}
+
+        #container {width:300px; margin:0 auto;}
+
+        form label {display:inline-block; width:140px;}
+
+
+        form input[type="text"],
+        form input[type="password"],
+
+        form .line {clear:both;}
+        form .line.submit {text-align:right;}
+
+    </style>
+    <title>Sign In</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="angular.min.js"></script>
+<script src="LoginValidation.js"></script>
+
+    <style>
+        div.project {
+            color:greenyellow;
+            margin:30px;
+            padding:30px;
+        }
+
+    </style>
+</head>
+
+
+<body ng-controller="LoginController" background="cap2.jpg">
+
+<div class="project"
+     align="center">
+    <h1 align="center">Login Details</h1>
+</div>
+
+
+<div align="center">
+
+       <b> User Name:<br></b><center><input type="text" ng-model="userName"><br></center>
+
+
+
+        <b>Password:<br></b>
+        <input type="password" ng-model="password">
+        <br><br>
+    <button onclick="window.location='Mainpage.html'" value="Submit">Submit</button>
+        <button onclick="window.location='register2.html'" value="Register">Register</button>
+    <br><br><a href="https://www.facebook.com/login/identify?ctx=recover&lwv=111">Forgot password<br>Click Here</a>
+</div>
+
+</body>
+</html>
